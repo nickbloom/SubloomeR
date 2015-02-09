@@ -7,6 +7,10 @@
 `Rmd.sublime-build` auto-detects `.Rmd` files, builds them, and opens the resulting .md file in Marked. You should be able to run them by pressing `⌘B` when viewing an `.Rmd` file.
 
 
+## Subloom Peek
+
+R `help` and/or static help file access through popup windows. See folder for more details.
+
 ## origami-repl.py 
 Does one of three things:
 
