@@ -1,0 +1,4 @@
+{
+	"shell_cmd": "Rscript -e \"require(knitr);require(rmarkdown); rmarkdown::render('$file',clean=FALSE,encoding='UTF-8')\"; mv $file_base_name.knit.md $file_base_name.md; rm $file_base_name.utf8.md; open -a Marked.app '$file_base_name.md'",
+	"selector": "text.html.markdown.knitr"
+}

@@ -1,0 +1,69 @@
+body {font-size:14px; line-height:170%; text-align: justify;font-family:'TisaPro';background-color:#FDFAF8;color:#403E3D;}
+
+table {margin:0px auto; border-collapse:collapse;border-top:solid 2px #E4DFDF;border-bottom:solid 2px #E4DFDF;}
+
+table tr{
+	border-bottom:solid thin #E4DFDF;
+}
+
+h3{
+	padding-left:1em;
+	margin-bottom:1em;
+}
+
+table tr:last-of-type{
+	border-bottom:none;
+}
+
+table:first-of-type{
+	visibility:hidden;
+	width:30%;
+	border-top:none;
+	border-bottom:none;
+}
+
+table:first-of-type tr{background-color:#FDFAF8}
+
+pre {
+    background-color: #FDF6E3;
+    overflow-x: scroll;
+}
+
+pre:first-of-type{
+	width:90%;
+	margin:0px auto;
+}
+
+code{
+	width:80%;
+	font-size:0.9em;
+}
+
+p{
+	width:90%;
+	margin:0px auto;
+}
+
+pre:last-of-type{font-size:1em;}
+
+code > span.kw { color: #268BD2; }
+code > span.dt { color: #268BD2; }
+code > span.dv, code > span.bn, code > span.fl { color: #D33682; }
+code > span.ch { color: #DC322F; }
+code > span.st { color: #2AA198; }
+code > span.co { color: #93A1A1; }
+code > span.ot { color: #A57800; }
+code > span.al { color: #CB4B16; font-weight: bold; }
+code > span.fu { color: #268BD2; }
+code > span.re { }
+code > span.er { color: #D30102; font-weight: bold; }
+
+table{width:90%;}
+
+
+
+
+
+del  {background:#fae6e6;} 
+ins  {background:#ecfce6}
+ a.footnote, a.citation {font-size: 0.83em; vertical-align: super;}

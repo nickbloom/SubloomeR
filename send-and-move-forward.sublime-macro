@@ -1,0 +1,4 @@
+[
+ {"command": "repl_transfer_current", "args": {"scope": "lines"}},
+ {"command": "move_by_paragraph", "args": {"forward": true}}
+]
