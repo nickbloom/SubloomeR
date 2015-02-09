@@ -4,7 +4,7 @@
 - to install, copy these to `User` in your Sublime Text packages folder. See README for SubloomPeek for extra info.
 
 ## Rmd.sublime-build
-`Rmd.sublime-build` auto-detects `.Rmd` files, builds them, and opens the resulting .md file in Marked. 
+`Rmd.sublime-build` auto-detects `.Rmd` files, builds them, and opens the resulting .md file in Marked. You should be able to run them by pressing `⌘B` when viewing an `.Rmd` file.
 
 
 ## origami-repl.py 
