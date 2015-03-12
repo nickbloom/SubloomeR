@@ -66,8 +66,6 @@ class MoveByParagraphCommand(MyCommand):
             elif (n==0):
                 continue
             else:
-                print(s)
-                print(s[self.view.find(r'\S',line.a).a-line.a])
                 stop_line = line
                 break
         if stop_line is None:
