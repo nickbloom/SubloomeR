@@ -1,0 +1,3 @@
+# Fix for SublimeREPL
+
+In the current version of SublimeREPL, R displays some funky characters in the console output (see [this issue](https://github.com/wuub/SublimeREPL/issues/322)). Since SublimeREPL isn't current under development, this hasn't gotten an official fix. The file `sublimerepl.py` has a hack-y fix for this problem that actually works pretty well. Just replace the current `sublimerepl.py` file in Packages/SublimeREPL, restart Sublime, and you should be ready to go.
