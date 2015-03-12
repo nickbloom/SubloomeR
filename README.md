@@ -12,11 +12,12 @@
 R `help` and/or static help file access through popup windows. See folder for more details.
 
 ## origami-repl.py 
-Does one of three things:
+Does one of a few things:
 
 1. If only one pane is open, it creates a new pane and initializes the R REPL
 2. If two panes are open and no R REPL process is running, it creates a new R REPL in the newest pane
 3. If two panes are open and the newest pane contains an R REPL, it makes that REPL view active
+4. If there is an active R REPL open, whether you have two panes open or not, it moves that REPL to a righthand pane.
 
 #### PACKAGE DEPENDENCIES
 
