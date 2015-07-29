@@ -54,12 +54,16 @@ class MoveByParagraphCommand(MyCommand):
     def _find_paragraph_position_forward(self, start):
         size = self.view.size()
         r = Region(start, size)
+        print(r)
         lines = self.view.split_by_newlines(r)
         found_empty = False
         stop_line = None
         for n, line in enumerate(lines):
             s = self.view.substr(line)
+            splen = len(self.view.find(r'\s.+?',line.a))
             if (not s):
+                continue
+            elif (splen>len(s)):
                 continue
             elif (s[self.view.find(r'\S',line.a).a-line.a]=='#'):
                 continue
@@ -69,14 +73,7 @@ class MoveByParagraphCommand(MyCommand):
                 stop_line = line
                 break
         if stop_line is None:
-            if self.view.substr(Region(size - 1, size)) == '\n':
-                # We want to jump to the very end if we reached the file and
-                # it ends with a newline.  If the file ends with a newline,
-                # the lines array does not end with u'' as expected, which is
-                # why we need to do this
-                stop_line = Region(size, size)
-            else:
-                stop_line = lines[-1]
+                stop_line = lines[0]
         return stop_line
 
     def _find_paragraph_position_backward(self, start):
