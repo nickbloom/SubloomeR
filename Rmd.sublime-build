@@ -1,4 +1,17 @@
 {
-	"shell_cmd": "Rscript -e \"require(knitr);require(rmarkdown); rmarkdown::render('$file',clean=FALSE,encoding='UTF-8')\"; mv $file_base_name.knit.md $file_base_name.md; rm $file_base_name.utf8.md; open -a Marked.app '$file_base_name.md'",
-	"selector": "text.html.markdown.knitr"
+    "name": "knit Markdown file with knitr",
+    "selector": "text.html.markdown.knitr",
+    "shell_cmd": "Rscript -e \"require(knitr); knit('$file_name', output = '$file_base_name.md')\"; open -a Marked.app '$file_base_name.md'",
+
+"variants": [
+{
+    "name": "Render HTML with rmarkdown",
+    "shell_cmd": "Rscript -e 'require(rmarkdown); require(knitr); rmarkdown::render(\"$file_name\", \"html_document\")'; open -a Marked.app $file_base_name.md"
+},{
+    "name": "Render PDF with rmarkdown",
+    "shell_cmd": "Rscript -e 'require(rmarkdown); require(knitr); rmarkdown::render(\"$file_name\", \"pdf_document\")'; open -a Skim.app $file_base_name.pdf"
+}
+
+]
+
 }
